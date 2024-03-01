@@ -1,0 +1,276 @@
+:root{
+    --main-color:#d92123;
+    --secondcolor:#ffff;
+    --thirdcolor:#191919;
+    --fourthcolor:#868686;
+    --fifthcolor:#eff3f4;
+    
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box; /*elementos nao ultrapassa a borda do elemento pai*/
+}
+
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+/* bootstrap icon */
+i{
+    background-color: var(--main-color);
+    color: var(--secondcolor);
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+/* header */
+#header{
+    min-height: 90vh;
+    background-image: url("../img/main_banner4.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--secondcolor);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand{
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+
+#navbar{
+    display: flex;
+    gap: 4rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+}
+
+#navbar a{
+    color: var(--secondcolor);
+    font-weight: bold;
+    padding: 1rem;
+}
+.banner.active{
+    opacity: 1;
+}
+
+
+.banner{
+    max-width: 50%;
+    padding: 4rem;
+    opacity: 0;
+    position: absolute;
+    transition: 0.6seg;
+}
+
+.banner h2{
+    font-size: 4rem ;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.banner p{
+    font-size: 1.6rem;
+    position: relative;
+    z-index: 2;
+}
+
+.square{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 40px;
+}
+
+.dots{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: var(--thirdcolor);
+}
+
+.dot.active{
+    background-color: var(--main-color);
+}
+
+/* areas */
+
+.text-image-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.text-container{
+    flex: 2 1 0;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+
+}
+
+.section-subtitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.section-title{
+    color: var(--thirdcolor);
+}
+
+.btn{
+    padding: 1.2rem 1.8rem;
+    background-color: var(--main-color);
+    align-self: flex-end;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--secondcolor);
+}
+
+.image-container{
+    flex: 1 1 300px;
+    position: relative;
+}
+
+.image-container i{
+    position: absolute;
+}
+
+#other-services{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service{
+    position: relative;
+}
+.service i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    
+}
+.service-info{
+    background-color: var(--fifthcolor);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+    margin-top: -3rem;
+    z-index: 2;
+    position: relative;
+}
+
+.service h4{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about-text{
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-position: center;
+    color:var(--secondcolor) ;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+#about-text .section-subtitle,
+#about-text .section-title{
+    color: var(--secondcolor);
+}
+
+#about-text i{
+    background-color: transparent;
+}
+
+#about-description{
+    display: flex;
+    align-items: center;
+}
+.about-description h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
+
+#about-data{
+    float: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#about-data .data {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: -1px;
+    margin-left: -1px;
+
+}
+#about-data .data:first-child{
+    border-bottom: 1px solid var(--thirdcolor);
+    border-right: 1px solid var(--thirdcolor);
+}
+    
+#about-data .data:last-child{
+        border-top: 1px solid var(--thirdcolor);
+        border-left: 1px solid var(--thirdcolor);
+    
+    }
+
