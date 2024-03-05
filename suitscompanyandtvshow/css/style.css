@@ -274,3 +274,95 @@ i{
     
     }
 
+    #about-data .data i{
+        background-color: transparent;
+        color: var(--main-color);
+        font-size: 4rem;
+        padding: 0;
+    }
+
+    .data .number{
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    .data .text{
+        text-transform: uppercase;
+    }
+
+    /* testimonials */
+
+    #testimonials{
+        display: flex;
+        align-items: center;
+
+    }
+    
+    #testimonial-information{
+        padding: 3rem;
+    }
+
+    .author{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .author .author-name{
+        color: var(--main-color);
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+
+    }
+.author .author-job{
+    columns: var(--thirdcolor);
+}
+
+
+    .author img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* employees */
+
+    #team{
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+
+    #team h2{
+        font-size: 3rem;
+        text-align: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    #team .square{
+        background-color: #868686;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px;
+        top: -25px;
+    }
+
+    .employees{
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .employee-name{
+        color: var(--main-color);
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+    }
