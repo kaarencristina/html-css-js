@@ -347,7 +347,7 @@ i{
         background-color: #868686;
         width: 100px;
         height: 100px;
-        left: 50%;
+        left: 4%;
         margin-left: -50px;
         top: -25px;
     }
@@ -426,3 +426,109 @@ i{
         background-color: var(--secondcolor);
         color: var(--main-color);
     }
+
+    #footer{
+        color:#fff ;
+        background-color:#840305 ;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 2rem 4rem;
+    }
+
+    #footer i{
+        font-size: 1rem;
+        padding: 0.3rem;
+
+    }
+
+    #footer a{
+        color: var(--secondcolor);
+    }
+
+
+    #footer {
+        background-color: #850505;
+        padding: 20px;
+        width: 100vw;
+    }
+    
+    .content-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-brand,
+    .content-info,
+    .social-networks {
+        flex: 1 1 0;
+    }
+    
+    .footer-brand h2,
+    .footer-brand p,
+    .content-info p,
+    .social-networks p {
+        margin: 5px;
+    }
+
+    .social-networks p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .networks {
+        margin: 20px;
+        display: inline-flex;
+    }
+
+    .content-info i{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /* mobile menu */
+
+    #menu, #close-menu{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    #close-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #mobile-navbar{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 2rem;
+        transition: 0.4s;
+        z-index: 5;
+    }
+
+    #mobile-navbar .menu-active{
+        left: 0;
+    }
+
+    /* responsive */
+
+@media (max-width: 450px) { 
+   body{
+    overflow-x: hidden ;
+   }
+
+   i{
+    padding: 1.5rem;
+    font-size: 2rem;
+   }
+
+   #navbar{
+    display: none;
+   }
+}
