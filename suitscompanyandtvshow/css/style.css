@@ -491,6 +491,7 @@ i{
     #menu, #close-menu{
         font-size: 2rem;
         padding: 1rem;
+       
     }
     #close-menu{
         position: absolute;
@@ -512,7 +513,7 @@ i{
         z-index: 5;
     }
 
-    #mobile-navbar .menu-active{
+    #mobile-navbar.menu-active{
         left: 0;
     }
 
