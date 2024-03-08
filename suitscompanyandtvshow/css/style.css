@@ -491,6 +491,7 @@ i{
     #menu, #close-menu{
         font-size: 2rem;
         padding: 1rem;
+        display: none;
        
     }
     #close-menu{
@@ -517,9 +518,19 @@ i{
         left: 0;
     }
 
+    #mobile-navbar a {
+        color: var(--secondcolor);
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--main-color);
+
+    }
+
     /* responsive */
 
-@media (max-width: 450px) { 
+@media (max-width: 500px) { 
    body{
     overflow-x: hidden ;
    }
@@ -532,4 +543,132 @@ i{
    #navbar{
     display: none;
    }
+   #menu, 
+   #close-menu{
+    display: block;
+   }
+   .banner{
+   max-width: 100%;
+   }
+
+   .banner h2{
+    font-size: 3rem;
+   }
+   .banner p{
+    font-size: 1rem;
+   }
+
+   .btn{
+    align-self: initial;
+   }
+   .image-container{
+    flex: 1 1 100%;
+   }
+   #other-services{
+    flex-wrap: wrap;
+   }
+
+   /* about */
+
+   #about-text,
+   #about-data{
+    flex: 1 1 100%;
+   }
+
+   .about-description{
+    gap: 1rem;
+   }
+
+   .about-description i{
+    padding: 0;
+    min-width: 40px;
+   }
+
+   #about #about-data .data{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--thirdcolor);
+   }
+
+   /* testimonials */
+
+   .text-container {
+    text-align: center;
+    padding: 2rem;
+   }
+
+   #team{
+     margin-top: 2rem;
+   }
+   #team h2{
+    font-size: 2.5rem;
+   }
+   #team .square{
+    background-color: #868686;
+    width: 50px;
+    height: 25px;
+   
+}
+
+   .employees{
+    flex-wrap: wrap;
+   }
+
+   #contact{
+    padding-bottom: 0;
+   }
+
+   #contact-information{
+    padding: 7rem 0.5rem;
+   }
+   #contact-information .form-control{
+    flex-direction: column;
+   }
+
+   #contact-information .btn{
+    align-self: auto;
+   }
+
+   /* footer */
+   .footer{
+    
+    padding: 2px 4px;
+    position: relative;
+   }
+   .footer-brand{
+    
+    
+    font-size: 1rem;
+   
+   }
+   .content-info{
+    width: 100%;
+    
+    
+   }
+ 
+  .dados p{
+    margin-bottom: 1rem;   
+    
+    
+  }
+
+
+   .social-networks{
+    
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    
+    
+    
+    
+    
+   }
+   .social-networks a,i{
+    margin:0.5rem;
+   
+   }
+
+   
 }
